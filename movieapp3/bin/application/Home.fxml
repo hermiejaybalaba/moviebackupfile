@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="452.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <children>
+      <AnchorPane layoutX="1.0" prefHeight="443.0" prefWidth="715.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="-7.0" prefHeight="25.0" prefWidth="741.0" style="-fx-background-color: skyblue; -fx-border-color: black;">
+               <children>
+                  <FontAwesomeIcon glyphName="PLAY" layoutX="28.0" layoutY="17.0" />
+                  <Label layoutX="46.0" layoutY="4.0" text="Movie Booking System" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-5.0" layoutY="24.0" prefHeight="430.0" prefWidth="184.0" style="-fx-background-color: linear-gradient(to bottom right, #833ab4, #fd1d1d, #fcb045);;">
+               <children>
+                  <FontAwesomeIcon glyphName="USER" layoutX="73.0" layoutY="65.0" size="4em" />
+                  <Label layoutX="64.0" layoutY="71.0" text="Welcome">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="43.0" layoutY="90.0" text="MOVIE-FX">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="24.0" layoutY="136.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="131.0" text="Home" />
+                  <Button layoutX="24.0" layoutY="167.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="131.0" text="Book" />
+                  <Button layoutX="24.0" layoutY="197.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="131.0" text="Available Movie" />
+                  <FontAwesomeIcon glyphName="HOME" layoutX="31.0" layoutY="155.0" />
+                  <FontAwesomeIcon glyphName="PLUS" layoutX="32.0" layoutY="186.0" />
+                  <FontAwesomeIcon glyphName="SEARCH" layoutX="31.0" layoutY="217.0" />
+                  <Button layoutX="42.0" layoutY="376.0" mnemonicParsing="false" text="LOG_OUT" onAction="#handleLogout1"/>
+                  <FontAwesomeIcon glyphName="SIGN_OUT" layoutX="14.0" layoutY="397.0" size="2em" />
+               </children>
+            </AnchorPane>
+            <TextField fx:id="searchBar" layoutX="185.0" layoutY="34.0" prefHeight="25.0" prefWidth="197.0" promptText="Search Movie " />
+            <Button layoutX="382.0" layoutY="34.0" mnemonicParsing="false" onAction="#search" text="Search" />
+            <ListView fx:id="listView" layoutX="186.0" layoutY="58.0" prefHeight="55.0" prefWidth="197.0" visible="false" />
+            <AnchorPane layoutX="185.0" layoutY="117.0" prefHeight="324.0" prefWidth="535.0" style="-fx-border-color: black; -fx-background-color: linear-gradient(to bottom right, #833ab4, #fd1d1d, #fcb045);">
+               <children>
+                  <ImageView fitHeight="192.0" fitWidth="152.0" layoutX="28.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@mov1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="192.0" fitWidth="152.0" layoutX="195.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@mov2.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="192.0" fitWidth="137.0" layoutX="368.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@mov3.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="41.0" layoutY="255.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="102.0" text="BUY TICKETS" />
+                  <Button layoutX="213.0" layoutY="255.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="102.0" text="BUY TICKETS" />
+                  <Button layoutX="381.0" layoutY="255.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="102.0" text="BUY TICKETS" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="557.0" layoutY="47.0" prefHeight="50.0" prefWidth="131.0" style="-fx-background-color: linear-gradient(to bottom right, #833ab4, #fd1d1d, #fcb045);">
+               <children>
+                  <Label layoutX="24.0" layoutY="10.0" prefHeight="32.0" prefWidth="137.0" text="TOTAL SOLD:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="118.0" layoutY="10.0" prefHeight="32.0" prefWidth="22.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

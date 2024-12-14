@@ -1,0 +1,36 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #833ab4, #fd1d1d, #fcb045); /* Instagram-like vibrant gradient */
+}
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.signup_Email {
+	 -fx-background-color: white; /* Light gray background */
+    -fx-background-radius: 10;
+	
+} .signup_Username {
+	
+	 -fx-background-color: white; /* Light gray background */
+    -fx-background-radius: 10;
+	
+} .signup_Password {
+	-fx-background-color: white; /* Light gray background */
+    -fx-background-radius: 10;
+	
+} .signup_Signup {
+	   -fx-background-color: #0095f6; /* Blue color */
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+	
+	
+} .signup_Signup:hover {
+	 -fx-background-color: #007ac1; 
+	
+	
+} .signup_BacktoLogin {
+    -fx-text-fill: #0095f6; /* Blue text */
+}
+
+.signup_BacktoLogin:hover {
+    -fx-text-fill: #005b99; /* Darker blue on hover */
+}
+
+

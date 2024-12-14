@@ -1,0 +1,45 @@
+/* Root background */
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #833ab4, #fd1d1d, #fcb045); /* Instagram-like vibrant gradient */
+}
+
+
+/* Username Field */
+.signin_Username {
+    -fx-background-color: white; /* Light gray background */
+    -fx-background-radius: 10;
+}
+
+.signin_Username:hover {
+    -fx-background-color: #cccccc; /* Slightly darker gray on hover */
+}
+
+/* Password Field */
+.signin_Password {
+    -fx-background-color: white; /* Light gray background */
+    -fx-background-radius: 10;
+}
+
+.signin_Password:hover {
+    -fx-background-color: #cccccc; /* Slightly darker gray on hover */
+}
+
+/* Login Button */
+.signin_Login {
+    -fx-background-color: #0095f6; /* Blue color */
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+}
+
+.signin_Login:hover {
+    -fx-background-color: #007ac1; /* Darker blue on hover */
+}
+
+/* Create New Account Hyperlink */
+.signin_Createnewaccount {
+    -fx-text-fill: #0095f6; /* Blue text */
+}
+
+.signin_Createnewaccount:hover {
+    -fx-text-fill: #005b99; /* Darker blue on hover */
+}
